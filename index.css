@@ -1,30 +1,95 @@
-*{
+/* Estilos gerais */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
 
-body{
-    background-color:rgb(73, 207, 153) ;
+body {
+    background-color: #d6e2ff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-div{
-    width: 400px;
+.card {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
 }
 
-img{
-    width: 400px;
-    height: 190px;
+/* Estilos da imagem de capa */
+.card > img {
+    width: 100%;
+    height: 160px;
     object-fit: cover;
-    display: block;
+    border-radius: 0;
 }
 
-.conteudo{
-    background-color: rgb(5, 73, 3);
-    padding: 40px;
+/* Estilos do conteúdo */
+.conteudo {
+    padding: 30px;
+}
+
+
+.conteudo p {
+    font-size: 14px;
+    color: #7d89a7;
+    margin-bottom: 25px;
+}
+
+.plano-box {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.icone-cifrao { 
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border: 2px solid #000000;
+    border-radius: 100%;
+    
+}
+.plano-detalhes {
+    text-align: left;
+    flex-grow: 1;
+}
+
+
+.plano-detalhes p {
+    font-size: 14px;
+    color: #7d89a7;
+    margin: 0;
+}
+
+.botao-pagamento {
+    background-color: #3829e0;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.botao-pagamento:hover {
+    background-color: #766cf1;
+}
+
+.cancelar-pedido{ 
+    color: #7d89a7;
+    font-weight: 700;
+}
+.cancelar-pedido:hover {
+    color: #0b37a5;
 }
