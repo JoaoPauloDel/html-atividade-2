@@ -1,4 +1,3 @@
-/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,7 @@ body {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #ffffff;
     width: 350px;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -23,7 +22,6 @@ body {
     text-align: center;
 }
 
-/* Estilos da imagem de capa */
 .card > img {
     width: 100%;
     height: 160px;
@@ -31,11 +29,9 @@ body {
     border-radius: 0;
 }
 
-/* Estilos do conteúdo */
 .conteudo {
     padding: 30px;
 }
-
 
 .conteudo p {
     font-size: 14px;
@@ -46,7 +42,7 @@ body {
 .plano-box {
     display: flex;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #d0d0d0;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 25px;
@@ -58,20 +54,18 @@ body {
     margin-right: 15px;
     border: 2px solid #000000;
     border-radius: 100%;
-    
+
 }
 .plano-detalhes {
     text-align: left;
     flex-grow: 1;
 }
 
-
 .plano-detalhes p {
     font-size: 14px;
     color: #7d89a7;
     margin: 0;
 }
-
 .botao-pagamento {
     background-color: #3829e0;
     color: #fff;
@@ -81,15 +75,17 @@ body {
     font-weight: 700;
     cursor: pointer;
     margin-bottom: 15px;
+    transition: transform 0.5s ease;
 }
 .botao-pagamento:hover {
     background-color: #766cf1;
+    transform: scale(1.1);
 }
-
 .cancelar-pedido{ 
     color: #7d89a7;
     font-weight: 700;
 }
 .cancelar-pedido:hover {
     color: #0b37a5;
+    cursor: pointer;
 }
